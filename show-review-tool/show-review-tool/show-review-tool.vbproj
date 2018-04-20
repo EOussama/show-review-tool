@@ -46,6 +46,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -73,6 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\Config.vb" />
+    <Compile Include="classes\Dep.vb" />
+    <Compile Include="forms\fExport.Designer.vb">
+      <DependentUpon>fExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\fExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\fMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +107,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="forms\fExport.resx">
+      <DependentUpon>fExport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\fMain.resx">
       <DependentUpon>fMain.vb</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +131,21 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
