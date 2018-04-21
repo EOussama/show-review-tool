@@ -4,8 +4,9 @@
     End Sub
 
     Private Sub bCopy_Click(sender As Object, e As EventArgs) Handles bCopy.Click
+        rtbOutput.SelectAll()
         rtbOutput.Copy()
-        MessageBox.Show("Review was successfully copied the review's content!", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        MessageBox.Show("Review was successfully copied the review's content!", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
     Private Sub bExport_Click(sender As Object, e As EventArgs) Handles bExport.Click
@@ -18,7 +19,7 @@
             Dim streamW As New System.IO.StreamWriter(saveF.FileName, False)
             Try
                 streamW.Write(rtbOutput.Text)
-                MessageBox.Show($"Review was successfully saved under {saveF.FileName}!", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                MessageBox.Show($"Review was successfully saved under {saveF.FileName}!", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch ex As Exception
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Finally
