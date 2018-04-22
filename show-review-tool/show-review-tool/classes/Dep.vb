@@ -27,7 +27,7 @@
         fMain.tpSound.Text = $"Sound ({fMain.nudSoundRating.Value.ToString()}/10)"
         fMain.tpCharacter.Text = $"Character ({fMain.nudCharacterRating.Value.ToString()}/10)"
         fMain.tpEnjoyment.Text = $"Enjoyment ({fMain.nudEnjoymentRating.Value.ToString()}/10)"
-        fMain.tpOverall.Text = $"Overall ({total.ToString()}/10)"
+        fMain.tpOverall.Text = $"Overall ({total.ToString("0.0")}/10)"
     End Sub
 
     Public Shared Function FormatOutput()
