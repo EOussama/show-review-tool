@@ -36,7 +36,7 @@
         output += fMain.rtbIntro.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpStory.Text}:{Environment.NewLine}" + fMain.rtbStoryDesc.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpArt.Text}:{Environment.NewLine}" + fMain.rtbArtDesc.Text + Environment.NewLine + Environment.NewLine
-        output += $"- {fMain.tpStory.Text}:{Environment.NewLine}" + fMain.rtbSoundDesc.Text + Environment.NewLine + Environment.NewLine
+        output += $"- {fMain.tpSound.Text}:{Environment.NewLine}" + fMain.rtbSoundDesc.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpCharacter.Text}:{Environment.NewLine}" + fMain.rtbCharacterDesc.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpEnjoyment.Text}:{Environment.NewLine}" + fMain.rtbEnjoymentDesc.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpOverall.Text}:{Environment.NewLine}" + fMain.rtbOverallDesc.Text
