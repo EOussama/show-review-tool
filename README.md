@@ -14,3 +14,6 @@ A very simple application that accepts input in the format of information like s
 * Overall
 
 After inputting all that needs to be inputted, the Overall score is updated automatically according to the other scores values. To export the results, you can simply do so via the `Export` option of the menu strip under the _File_ dropdown.
+
+**Tip**
+> Typing [title] (case sensitive) will have all of those occurrences auto replaced with the reviewed title name, another way to make your life easier.

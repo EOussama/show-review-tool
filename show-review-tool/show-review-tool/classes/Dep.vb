@@ -1,6 +1,6 @@
 ﻿Public Class Dep
     Public Shared Sub NewReview()
-        If MessageBox.Show("Do you really want to open a new review panel?", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error) = DialogResult.OK Then
+        If MessageBox.Show("Do you really want to open a new review panel?", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Question) = DialogResult.OK Then
             fMain.tbShow.Clear()
             fMain.rtbIntro.Clear()
 
@@ -33,6 +33,7 @@
     Public Shared Function FormatOutput()
         Dim output As String = String.Empty
 
+        output += fMain.tbShow.Text + " Review:" + Environment.NewLine + Environment.NewLine
         output += fMain.rtbIntro.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpStory.Text}:{Environment.NewLine}" + fMain.rtbStoryDesc.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpArt.Text}:{Environment.NewLine}" + fMain.rtbArtDesc.Text + Environment.NewLine + Environment.NewLine
@@ -41,6 +42,6 @@
         output += $"- {fMain.tpEnjoyment.Text}:{Environment.NewLine}" + fMain.rtbEnjoymentDesc.Text + Environment.NewLine + Environment.NewLine
         output += $"- {fMain.tpOverall.Text}:{Environment.NewLine}" + fMain.rtbOverallDesc.Text
 
-        Return output
+        Return output.Replace("[title]", fMain.tbShow.Text.Trim())
     End Function
 End Class
