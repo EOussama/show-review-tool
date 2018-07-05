@@ -1,5 +1,6 @@
 ﻿Public Class fExport
     Private Sub fExport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lDesc.Text = fMain.tbShow.Text + " Review"
         rtbOutput.Text = Dep.FormatOutput()
     End Sub
 

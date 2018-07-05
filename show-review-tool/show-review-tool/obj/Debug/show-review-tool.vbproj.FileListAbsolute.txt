@@ -15,7 +15,6 @@ D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\bin
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\bin\Debug\show-review-tool.exe
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\bin\Debug\show-review-tool.pdb
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\bin\Debug\show-review-tool.xml
-D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show-review-tool.vbprojResolveAssemblyReference.cache
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show_review_tool.fExport.resources
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show_review_tool.fMain.resources
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show_review_tool.Resources.resources
@@ -24,3 +23,4 @@ D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show-review-tool.exe
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show-review-tool.xml
 D:\Scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show-review-tool.pdb
+D:\scripting\Visual Basic\show-review-tool\show-review-tool\show-review-tool\obj\Debug\show-review-tool.vbprojAssemblyReference.cache

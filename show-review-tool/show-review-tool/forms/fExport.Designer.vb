@@ -44,17 +44,17 @@ Partial Class fExport
         'lDesc
         '
         Me.lDesc.AutoSize = True
-        Me.lDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lDesc.Location = New System.Drawing.Point(12, 16)
+        Me.lDesc.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lDesc.Location = New System.Drawing.Point(9, 16)
         Me.lDesc.Name = "lDesc"
-        Me.lDesc.Size = New System.Drawing.Size(125, 16)
+        Me.lDesc.Size = New System.Drawing.Size(158, 19)
         Me.lDesc.TabIndex = 3
         Me.lDesc.Text = "The complete review"
         '
         'rtbOutput
         '
         Me.rtbOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbOutput.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbOutput.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbOutput.Location = New System.Drawing.Point(12, 45)
         Me.rtbOutput.Name = "rtbOutput"
         Me.rtbOutput.Size = New System.Drawing.Size(378, 344)

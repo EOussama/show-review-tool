@@ -57,6 +57,8 @@ Partial Class fMain
         Me.lEnjoymentRating = New System.Windows.Forms.Label()
         Me.tpOverall = New System.Windows.Forms.TabPage()
         Me.rtbOverallDesc = New System.Windows.Forms.RichTextBox()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msMenu.SuspendLayout()
         Me.pHeader.SuspendLayout()
         Me.tcTabs.SuspendLayout()
@@ -85,7 +87,7 @@ Partial Class fMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.ExportToolStripMenuItem, Me.QuitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.ExportToolStripMenuItem, Me.QuitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -136,7 +138,7 @@ Partial Class fMain
         'rtbIntro
         '
         Me.rtbIntro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbIntro.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbIntro.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbIntro.Location = New System.Drawing.Point(72, 50)
         Me.rtbIntro.Name = "rtbIntro"
         Me.rtbIntro.Size = New System.Drawing.Size(360, 96)
@@ -156,10 +158,10 @@ Partial Class fMain
         'tbShow
         '
         Me.tbShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tbShow.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbShow.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbShow.Location = New System.Drawing.Point(72, 14)
         Me.tbShow.Name = "tbShow"
-        Me.tbShow.Size = New System.Drawing.Size(360, 23)
+        Me.tbShow.Size = New System.Drawing.Size(360, 22)
         Me.tbShow.TabIndex = 1
         '
         'lTitle
@@ -207,7 +209,7 @@ Partial Class fMain
         'rtbStoryDesc
         '
         Me.rtbStoryDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbStoryDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbStoryDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbStoryDesc.Location = New System.Drawing.Point(16, 42)
         Me.rtbStoryDesc.Name = "rtbStoryDesc"
         Me.rtbStoryDesc.Size = New System.Drawing.Size(412, 212)
@@ -250,7 +252,7 @@ Partial Class fMain
         'rtbArtDesc
         '
         Me.rtbArtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbArtDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbArtDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbArtDesc.Location = New System.Drawing.Point(16, 42)
         Me.rtbArtDesc.Name = "rtbArtDesc"
         Me.rtbArtDesc.Size = New System.Drawing.Size(412, 212)
@@ -293,7 +295,7 @@ Partial Class fMain
         'rtbSoundDesc
         '
         Me.rtbSoundDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbSoundDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbSoundDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbSoundDesc.Location = New System.Drawing.Point(16, 42)
         Me.rtbSoundDesc.Name = "rtbSoundDesc"
         Me.rtbSoundDesc.Size = New System.Drawing.Size(412, 212)
@@ -336,7 +338,7 @@ Partial Class fMain
         'rtbCharacterDesc
         '
         Me.rtbCharacterDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbCharacterDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbCharacterDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbCharacterDesc.Location = New System.Drawing.Point(16, 42)
         Me.rtbCharacterDesc.Name = "rtbCharacterDesc"
         Me.rtbCharacterDesc.Size = New System.Drawing.Size(412, 212)
@@ -379,7 +381,7 @@ Partial Class fMain
         'rtbEnjoymentDesc
         '
         Me.rtbEnjoymentDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbEnjoymentDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbEnjoymentDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbEnjoymentDesc.Location = New System.Drawing.Point(16, 42)
         Me.rtbEnjoymentDesc.Name = "rtbEnjoymentDesc"
         Me.rtbEnjoymentDesc.Size = New System.Drawing.Size(412, 212)
@@ -420,12 +422,26 @@ Partial Class fMain
         'rtbOverallDesc
         '
         Me.rtbOverallDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtbOverallDesc.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbOverallDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtbOverallDesc.Location = New System.Drawing.Point(16, 18)
         Me.rtbOverallDesc.Name = "rtbOverallDesc"
         Me.rtbOverallDesc.Size = New System.Drawing.Size(412, 236)
         Me.rtbOverallDesc.TabIndex = 6
         Me.rtbOverallDesc.Text = ""
+        '
+        'SaveToolStripMenuItem
+        '
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SaveToolStripMenuItem.Text = "Save"
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
         '
         'fMain
         '
@@ -502,4 +518,6 @@ Partial Class fMain
     Friend WithEvents lEnjoymentRating As Label
     Friend WithEvents rtbOverallDesc As RichTextBox
     Friend WithEvents ExportToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
 End Class
