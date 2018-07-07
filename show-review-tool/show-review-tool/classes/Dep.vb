@@ -56,7 +56,7 @@
             Dim _dec As Xml.XmlNode = doc.CreateXmlDeclaration("1.0", "UTF-8", Nothing)
             doc.AppendChild(_dec)
 
-            Dim _root As Xml.XmlElement = doc.CreateElement("Review")
+            Dim _root As Xml.XmlElement = doc.CreateElement("review")
             _root.SetAttribute("title", title)
             doc.AppendChild(_root)
 
